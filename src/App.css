@@ -1,0 +1,92 @@
+/* Центриране и фоново изображение */
+.game-container {
+  background-image: url("https://onwardigo.wordpress.com/wp-content/uploads/2016/05/millionaire02a.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+/* Лого */
+.game-logo {
+  width: 250px;
+  margin-bottom: 20px;
+}
+
+/* Основен контейнер */
+.content {
+  background-color: rgba(0, 0, 128, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  width: 60%;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+}
+
+/* Въпрос */
+.question-box {
+  margin-bottom: 20px;
+}
+
+/* Отговори */
+.answer-btn {
+  width: 80%;
+  padding: 15px;
+  margin: 10px;
+  font-size: 18px;
+  color: white;
+  background-color: rgba(0, 0, 255, 0.8);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Цветове при избор */
+.selected {
+  background-color: yellow !important;
+  color: black;
+}
+.correct {
+  background-color: green !important;
+}
+.wrong {
+  background-color: red !important;
+}
+
+/* Сума */
+.score {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.jokers {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.joker-btn {
+  background: #ffd700;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.joker-btn:disabled {
+  background: gray;
+  cursor: not-allowed;
+}
